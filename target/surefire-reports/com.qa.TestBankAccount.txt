@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.TestBankAccount
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec <<< FAILURE!
+com.qa.TestBankAccount.test_balance_below_minimum()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: You do not have sufficient funds.
+	at com.qa.BankAccount.<init>(BankAccount.java:12)
+	at com.qa.TestBankAccount.test_balance_below_minimum(TestBankAccount.java:75)
+
