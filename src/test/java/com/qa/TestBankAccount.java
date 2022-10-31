@@ -72,13 +72,12 @@ public class TestBankAccount {
 
     @Test
     public void test_balance_below_minimum() {
-        BankAccount account = new BankAccount(10.0, 50.0, "Peter Parker");
+        BankAccount account = new BankAccount(100.0, 50.0, "Peter Parker");
         if (account.getBalance() < account.getMinimumBalance()) {
-     //       assertThrows(IllegalArgumentException.class, (Executable) account);
-            System.out.println("Warning, account balance has gone below your set minimum.");
+            assertThrows(IllegalArgumentException.class, (Executable) account);
         }
     }
-    
+
     @Test
     public void test_current_account_withdraw_over_limit150(){
     // arrange

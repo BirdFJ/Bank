@@ -12,9 +12,9 @@ public class BankAccount {
             throw new IllegalArgumentException("You do not have sufficient funds.");
             // need to add test that deal with this exception - assertThrows
         }
-        //this.setBalance(balance);
+        this.setBalance(balance);
         //this.setMinimumBalance(minimumBalance);
-        this.balance = balance;
+        //this.balance = balance;
         this.minimumBalance = minimumBalance;
         this.accountHolderName = accountHolderName;
     }
@@ -27,9 +27,9 @@ public class BankAccount {
 
 
     public static double getBalance() {return balance;}
-    public void setBalance(double balance) {this.balance = balance;}
+    public void setBalance(double b) {balance = b;}
 
-    public void setSavingsBalance(double balance) {this.balance = balance *= 1.05;}
+    //public void setSavingsBalance(double balance) {this.balance = balance *= 1.05;}
 
     public static double deposit(double num) {balance =+ num; return balance;}
 
@@ -37,8 +37,9 @@ public class BankAccount {
         balance -= num; return balance;
     }
 
-
-
-
+    public void aboutAccount(){
+        System.out.println("The account holder name is " + this.accountHolderName);
+        System.out.println("The account balance of " + this.accountHolderName + " is £" + this.getBalance());
+    }
 
 }

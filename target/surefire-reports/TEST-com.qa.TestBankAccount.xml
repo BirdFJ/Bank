@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="1" name="com.qa.TestBankAccount" time="0.019" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.qa.TestBankAccount" time="0.028" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -62,15 +62,10 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_withdraw_50_from_account" time="0.006"/>
-  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_balance_below_minimum" time="0.002">
-    <failure message="You do not have sufficient funds." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: You do not have sufficient funds.
-	at com.qa.BankAccount.&lt;init&gt;(BankAccount.java:12)
-	at com.qa.TestBankAccount.test_balance_below_minimum(TestBankAccount.java:75)
-</failure>
-  </testcase>
-  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_opening_balance_not_under_50" time="0.001"/>
+  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_opening_balance_not_under_50" time="0.003"/>
   <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_withdraw_not_negative" time="0"/>
-  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_current_account_withdraw_over_limit150" time="0.01"/>
-  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_savings_should_add_5pc_to_balance" time="0"/>
+  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_withdraw_50_from_account" time="0.006"/>
+  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_balance_below_minimum" time="0"/>
+  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_savings_should_add_5pc_to_balance" time="0.001"/>
+  <testcase classname="com.qa.TestBankAccount" name="com.qa.TestBankAccount.test_current_account_withdraw_over_limit150" time="0.018"/>
 </testsuite>
