@@ -19,7 +19,7 @@ public class TestBankAccount {
 
 
     @Test
-    public void deposit_50_into_account() {
+    public void test_deposit_50_into_account() {
 //      Arrange
         BankAccount account = new BankAccount(0.0, 50.0,"Gary Gary ");
         double amount = 50.0;
