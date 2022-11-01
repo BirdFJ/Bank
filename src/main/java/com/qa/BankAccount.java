@@ -31,7 +31,7 @@ public class BankAccount {
 
     //public void setSavingsBalance(double balance) {this.balance = balance *= 1.05;}
 
-    public static double deposit(double num) {balance =+ num; return balance;}
+    public static double deposit(double num) {balance += num; return balance;}
 
     public double withdraw(double num) {
         balance -= num; return balance;
