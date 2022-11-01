@@ -21,9 +21,9 @@ public class TestBankAccount {
     @Test
     public void test_deposit_50_into_account() {
 //      Arrange
-        BankAccount account = new BankAccount(0.0, 50.0,"Gary Gary ");
+        BankAccount account = new BankAccount(100.0, 50.0,"Gary Gary ");
         double amount = 50.0;
-        double expectedBalance = 50.0;
+        double expectedBalance = 150.0;
 
 //      Act
         account.deposit(amount);
